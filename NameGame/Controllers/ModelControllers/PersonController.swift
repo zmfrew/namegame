@@ -6,15 +6,12 @@
 //  Copyright © 2018 Zachary Frew. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class PersonController {
     
     // MARK: - URL Properties
     static let baseURL = URL(string: "https://willowtreeapps.com/api/v1.0/profiles/")
-    
-    // MARK: - Instance Properties
-    var people: [Person] = []
     
     // MARK: - Instance Methods
     static func retrieveAllPeople(completion: @escaping ([Person]?) -> Void) {
@@ -57,7 +54,24 @@ class PersonController {
         
     }
     
-    
-    
+    // FIXME: - Refactor this method to avoid hard-coding URL.
+    static func retrieveHeadshotFrom(person: Person, completion: @escaping (UIImage?) -> Void) {
+        guard let url = URL(string: "https:" + person.headshotURL) else { completion(nil); return }
+        
+        URLSession.shared.dataTask(with: url) { (data, _, error) in
+            if let error = error {
+                print("Error occurred retrieving heashot image: \(error.localizedDescription).")
+                completion(nil)
+                return
+            }
+            
+            guard let data = data else { completion(nil); return }
+            
+            let headshot = UIImage(data: data)
+            completion(headshot)
+            
+        }.resume()
+        
+    }
     
 }
