@@ -6,7 +6,7 @@
 //  Copyright © 2018 Zachary Frew. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class Person {
     

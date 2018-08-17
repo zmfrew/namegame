@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aWV-J7-6Zy">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -34,10 +34,10 @@
             </objects>
             <point key="canvasLocation" x="-823.20000000000005" y="67.916041979010501"/>
         </scene>
-        <!--View Controller-->
+        <!--Main Game View Controller-->
         <scene sceneID="txM-0Z-E7f">
             <objects>
-                <viewController id="aWV-J7-6Zy" sceneMemberID="viewController">
+                <viewController id="aWV-J7-6Zy" customClass="MainGameViewController" customModule="NameGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="go5-LL-Y0d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,34 +48,34 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="zlv-pu-tw9">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="178.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ypk-ET-Ka2">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obE-M9-1l1">
                                                 <rect key="frame" x="0.0" y="0.0" width="163.5" height="178.5"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5tl-aG-7W7">
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIf-FC-Qcx">
                                                 <rect key="frame" x="179.5" y="0.0" width="163.5" height="178.5"/>
-                                            </imageView>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="uud-Os-2tD">
                                         <rect key="frame" x="0.0" y="194.5" width="343" height="178.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ebX-f2-6su">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="343-r5-yqH">
                                                 <rect key="frame" x="0.0" y="0.0" width="163.5" height="178.5"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SmI-pp-lVM">
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jn-C6-LX7">
                                                 <rect key="frame" x="179.5" y="0.0" width="163.5" height="178.5"/>
-                                            </imageView>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Vvx-hS-IuQ">
                                         <rect key="frame" x="0.0" y="389" width="343" height="178.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mfF-Gi-uyR">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="He6-mK-O8i">
                                                 <rect key="frame" x="0.0" y="0.0" width="163.5" height="178.5"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jqX-tM-Pax">
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxE-RV-flJ">
                                                 <rect key="frame" x="179.5" y="0.0" width="163.5" height="178.5"/>
-                                            </imageView>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -112,6 +112,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ozc-h8-FQH"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomLeftButton" destination="He6-mK-O8i" id="XVv-2R-SRt"/>
+                        <outlet property="bottomRightButton" destination="wxE-RV-flJ" id="jeb-t8-RAL"/>
+                        <outlet property="bottomView" destination="gow-ws-b3g" id="ifh-uE-cHC"/>
+                        <outlet property="displayLabel" destination="W7a-Iv-SuK" id="Yqy-HK-6Lb"/>
+                        <outlet property="middleLeftButton" destination="343-r5-yqH" id="6Hi-Un-CHq"/>
+                        <outlet property="middleRightButton" destination="3Jn-C6-LX7" id="VW4-hV-DrB"/>
+                        <outlet property="topLeftButton" destination="obE-M9-1l1" id="fBo-43-VwM"/>
+                        <outlet property="topRightButton" destination="tIf-FC-Qcx" id="9E9-7Q-xWv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="my4-5W-Hdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
